@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+       
+    </head>
+    
+    <body>
+        
+        <table>
+        	<tr>
+        		<td>
+        			产品编号
+        		</td>
+        		<td>
+        			产品名称
+        		</td>
+        		<td>
+        			产品价格
+        		</td>
+        		<td>
+        			操作
+        		</td>
+        	</tr>
+	        {{range .products}}
+	        	<tr>
+	        		<td>
+	        			{{.Id }}
+	        		</td>
+	        		<td>
+	        			{{.Name }}
+	        		</td>
+	        		<td>
+	        			{{.Price }}
+	        		</td>
+	        		<td>
+	        			<a href="/buy?productId={{.Id}}">购买</a>
+	        		</td>
+	        	</tr>
+	        {{end}}
+	        
+        </table>
+        
+    </body>
+    
+</html>
+
+

@@ -1,0 +1,18 @@
+<html>
+
+    <head>
+       
+    </head>
+    
+    <body>
+		<form action="/createOrder" method="POST">
+			<input type="hidden" name="productId" value="{{.product.Id}}">
+			产品编号: {{.product.Id}} <br/>
+			产品名称: {{.product.Name}}<br/>
+			产品价格: {{.product.Price}}<br/>
+			购买数量: <input id="buyCounts" name="buyCounts"/><br/>
+			<input type="submit" value="生成订单"/>
+		</form>
+    </body>
+    
+</html>
